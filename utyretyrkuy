@@ -1,0 +1,298 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local toggle2 = Instance.new("TextButton")
+local Frame2 = Instance.new("ScrollingFrame")
+local chrisguiinfo = Instance.new("TextLabel")
+local cmdinfotrap = Instance.new("TextLabel")
+local instantkillloopinfo = Instance.new("TextLabel")
+local v1floatloopinfo = Instance.new("TextLabel")
+local v1info = Instance.new("TextLabel")
+local v3info = Instance.new("TextLabel")
+local v3pt2info = Instance.new("TextLabel")
+local loop2 = Instance.new("TextLabel")
+local loop1 = Instance.new("TextLabel")
+local loop3 = Instance.new("TextLabel")
+local gui1 = Instance.new("TextLabel")
+local loop4 = Instance.new("TextLabel")
+local loop5 = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+toggle2.Name = "toggle2"
+toggle2.Parent = ScreenGui
+toggle2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+toggle2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggle2.BorderSizePixel = 0
+toggle2.Position = UDim2.new(0.416442037, 0, 0.0428669415, 0)
+toggle2.Size = UDim2.new(0, 53, 0, 50)
+toggle2.Font = Enum.Font.SourceSansBold
+toggle2.Text = "cmds"
+toggle2.TextColor3 = Color3.fromRGB(0, 0, 0)
+toggle2.TextSize = 16.000
+
+Frame2.Name = "Frame2"
+Frame2.Parent = ScreenGui
+Frame2.Active = true
+Frame2.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Frame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame2.BorderSizePixel = 0
+Frame2.Position = UDim2.new(0.492568552, 0, 0.278067529, 0)
+Frame2.Size = UDim2.new(0, 337, 0, 214)
+
+chrisguiinfo.Name = "chris gui info"
+chrisguiinfo.Parent = Frame2
+chrisguiinfo.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+chrisguiinfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+chrisguiinfo.BorderSizePixel = 0
+chrisguiinfo.Position = UDim2.new(0.0112101836, 0, 0.290401429, 0)
+chrisguiinfo.Size = UDim2.new(0, 183, 0, 50)
+chrisguiinfo.Font = Enum.Font.SourceSans
+chrisguiinfo.Text = "leaked gui from midnightcrew"
+chrisguiinfo.TextColor3 = Color3.fromRGB(0, 0, 0)
+chrisguiinfo.TextSize = 14.000
+
+cmdinfotrap.Name = "cmd info trap"
+cmdinfotrap.Parent = Frame2
+cmdinfotrap.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+cmdinfotrap.BorderColor3 = Color3.fromRGB(0, 0, 0)
+cmdinfotrap.BorderSizePixel = 0
+cmdinfotrap.Position = UDim2.new(-0.000659252109, 0, 0.126157388, 0)
+cmdinfotrap.Size = UDim2.new(0, 183, 0, 50)
+cmdinfotrap.Font = Enum.Font.SourceSansBold
+cmdinfotrap.Text = "preflex = . / cmds = .wl .kill .rc and .lol"
+cmdinfotrap.TextColor3 = Color3.fromRGB(0, 0, 0)
+cmdinfotrap.TextSize = 14.000
+
+instantkillloopinfo.Name = "instant kill loop info"
+instantkillloopinfo.Parent = Frame2
+instantkillloopinfo.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+instantkillloopinfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+instantkillloopinfo.BorderSizePixel = 0
+instantkillloopinfo.Position = UDim2.new(-0.00512695312, 0, 0.545186579, 0)
+instantkillloopinfo.Size = UDim2.new(0, 170, 0, 50)
+instantkillloopinfo.Font = Enum.Font.SourceSansBold
+instantkillloopinfo.Text = "preflex = - cmds = -kill -rc -lol -wl"
+instantkillloopinfo.TextColor3 = Color3.fromRGB(0, 0, 0)
+instantkillloopinfo.TextSize = 14.000
+
+v1floatloopinfo.Name = "v1 float loop info"
+v1floatloopinfo.Parent = Frame2
+v1floatloopinfo.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+v1floatloopinfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+v1floatloopinfo.BorderSizePixel = 0
+v1floatloopinfo.Position = UDim2.new(0.0108175306, 0, 0.382862687, 0)
+v1floatloopinfo.Size = UDim2.new(0, 139, 0, 50)
+v1floatloopinfo.Font = Enum.Font.SourceSansBold
+v1floatloopinfo.Text = "preflex = ! cmds = !lol !kill !rc !wl"
+v1floatloopinfo.TextColor3 = Color3.fromRGB(0, 0, 0)
+v1floatloopinfo.TextSize = 10.000
+
+v1info.Name = "v1 info"
+v1info.Parent = Frame2
+v1info.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+v1info.BorderColor3 = Color3.fromRGB(0, 0, 0)
+v1info.BorderSizePixel = 0
+v1info.Position = UDim2.new(-0.00445810193, 0, 0.466956884, 0)
+v1info.Size = UDim2.new(0, 128, 0, 50)
+v1info.Font = Enum.Font.SourceSansBold
+v1info.Text = "preflex = : cmds = :lka :rc :wl :kill"
+v1info.TextColor3 = Color3.fromRGB(0, 0, 0)
+v1info.TextSize = 10.000
+
+v3info.Name = "v3 info"
+v3info.Parent = Frame2
+v3info.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+v3info.BorderColor3 = Color3.fromRGB(0, 0, 0)
+v3info.BorderSizePixel = 0
+v3info.Position = UDim2.new(-0.000659252109, 0, 0.201954499, 0)
+v3info.Size = UDim2.new(0, 183, 0, 49)
+v3info.Font = Enum.Font.SourceSans
+v3info.Text = "preflex = ? / cmds = ?wl ?kill ?rc ?lol"
+v3info.TextColor3 = Color3.fromRGB(0, 0, 0)
+v3info.TextSize = 14.000
+
+v3pt2info.Name = "v3 pt 2 info"
+v3pt2info.Parent = Frame2
+v3pt2info.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+v3pt2info.BorderColor3 = Color3.fromRGB(0, 0, 0)
+v3pt2info.BorderSizePixel = 0
+v3pt2info.Position = UDim2.new(-0.00227115978, 0, 0.0511269271, 0)
+v3pt2info.Size = UDim2.new(0, 187, 0, 50)
+v3pt2info.Font = Enum.Font.SourceSansBold
+v3pt2info.Text = "preflex = + cmds = same as norm v3"
+v3pt2info.TextColor3 = Color3.fromRGB(0, 0, 0)
+v3pt2info.TextSize = 14.000
+
+loop2.Name = "loop2"
+loop2.Parent = Frame2
+loop2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+loop2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loop2.BorderSizePixel = 0
+loop2.Position = UDim2.new(0.552625, 0, 0.0534884743, 0)
+loop2.Size = UDim2.new(0, 151, 0, 50)
+loop2.Font = Enum.Font.SourceSansBold
+loop2.Text = "v3 pt2"
+loop2.TextColor3 = Color3.fromRGB(0, 0, 0)
+loop2.TextSize = 23.000
+
+loop1.Name = "loop1"
+loop1.Parent = Frame2
+loop1.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+loop1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loop1.BorderSizePixel = 0
+loop1.Position = UDim2.new(0.554896116, 0, 0.128524631, 0)
+loop1.Size = UDim2.new(0, 150, 0, 50)
+loop1.Font = Enum.Font.SourceSansBold
+loop1.Text = "loop trap"
+loop1.TextColor3 = Color3.fromRGB(0, 0, 0)
+loop1.TextSize = 23.000
+
+loop3.Name = "loop3"
+loop3.Parent = Frame2
+loop3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+loop3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loop3.BorderSizePixel = 0
+loop3.Position = UDim2.new(0.540000021, 0, 0.202000007, 0)
+loop3.Size = UDim2.new(0, 150, 0, 50)
+loop3.Font = Enum.Font.SourceSansBold
+loop3.Text = "v3"
+loop3.TextColor3 = Color3.fromRGB(0, 0, 0)
+loop3.TextSize = 25.000
+
+gui1.Name = "gui1"
+gui1.Parent = Frame2
+gui1.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+gui1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+gui1.BorderSizePixel = 0
+gui1.Position = UDim2.new(0.53709197, 0, 0.289719611, 0)
+gui1.Size = UDim2.new(0, 140, 0, 50)
+gui1.Font = Enum.Font.SourceSansBold
+gui1.Text = "chris gui"
+gui1.TextColor3 = Color3.fromRGB(0, 0, 0)
+gui1.TextSize = 22.000
+
+loop4.Name = "loop4"
+loop4.Parent = Frame2
+loop4.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+loop4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loop4.BorderSizePixel = 0
+loop4.Position = UDim2.new(0.406528205, 0, 0.383177578, 0)
+loop4.Size = UDim2.new(0, 200, 0, 50)
+loop4.Font = Enum.Font.SourceSansBold
+loop4.Text = "v1 pt3"
+loop4.TextColor3 = Color3.fromRGB(0, 0, 0)
+loop4.TextSize = 24.000
+
+loop5.Name = "loop 5"
+loop5.Parent = Frame2
+loop5.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+loop5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loop5.BorderSizePixel = 0
+loop5.Position = UDim2.new(0.373887241, 0, 0.462616831, 0)
+loop5.Size = UDim2.new(0, 200, 0, 50)
+loop5.Font = Enum.Font.SourceSansBold
+loop5.Text = "v1 loop"
+loop5.TextColor3 = Color3.fromRGB(0, 0, 0)
+loop5.TextSize = 30.000
+
+TextLabel.Parent = Frame2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.498516321, 0, 0.544169784, 0)
+TextLabel.Size = UDim2.new(0, 150, 0, 50)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "v1 pt2"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 26.000
+
+-- Scripts:
+
+local function UEWV_fake_script() -- toggle2.2 
+	local script = Instance.new('LocalScript', toggle2)
+
+	local back = script.Parent.Parent.Frame2
+	local con = script.Parent.Parent.Frame2
+	
+	local window = {
+		count = 0;
+		toggles = {},
+		closed = false;
+	}
+	script.Parent.MouseButton1Click:connect(function()
+		window.closed = not window.closed
+		script.Parent.Text = (window.closed and "+" or "X")
+		if script.Parent.Text == "+" then
+			back:TweenSize(UDim2.new(0, 190,0, 0), "Out", "Sine", 0.5)
+			con:TweenSize(UDim2.new(0, 190,0, 0), "Out", "Sine", 0.5)
+			wait(0.1) do
+				con.Visible = false
+			end
+		else
+			back:TweenSize(UDim2.new(0, 337,0, 214), "Out", "Sine", 0.5)
+			con:TweenSize(UDim2.new(0, 337,0, 214), "Out", "Sine", 0.5)
+			wait(0.2) do
+				con.Visible = true
+			end
+		end
+	
+	end)
+end
+coroutine.wrap(UEWV_fake_script)()
+local function TWCPI_fake_script() -- toggle2.LocalScript 
+	local script = Instance.new('LocalScript', toggle2)
+
+	local dragger = {}; 
+	local resizer = {};
+	
+	do
+		local mouse = game:GetService("Players").LocalPlayer:GetMouse();
+		local inputService = game:GetService('UserInputService');
+		local heartbeat = game:GetService("RunService").Heartbeat;
+		-- // credits to Ririchi / Inori for this cute drag function :)
+		function dragger.new(frame)
+			local s, event = pcall(function()
+				return frame.MouseEnter
+			end)
+	
+			if s then
+				frame.Active = true;
+	
+				event:connect(function()
+					local input = frame.InputBegan:connect(function(key)
+						if key.UserInputType == Enum.UserInputType.MouseButton1 then
+							local objectPosition = Vector2.new(mouse.X - frame.AbsolutePosition.X, mouse.Y - frame.AbsolutePosition.Y);
+							while heartbeat:wait() and inputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+								frame:TweenPosition(UDim2.new(0, mouse.X - objectPosition.X + (frame.Size.X.Offset * frame.AnchorPoint.X), 0, mouse.Y - objectPosition.Y + (frame.Size.Y.Offset * frame.AnchorPoint.Y)), 'Out', 'Quad', 0.1, true);
+							end
+						end
+					end)
+	
+					local leave;
+					leave = frame.MouseLeave:connect(function()
+						input:disconnect();
+						leave:disconnect();
+					end)
+				end)
+			end
+		end
+	
+		function resizer.new(p, s)
+			p:GetPropertyChangedSignal('AbsoluteSize'):connect(function()
+				s.Size = UDim2.new(s.Size.X.Scale, s.Size.X.Offset, s.Size.Y.Scale, p.AbsoluteSize.Y);
+			end)
+		end
+	end
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(TWCPI_fake_script)()
